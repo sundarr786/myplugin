@@ -15,7 +15,7 @@ jobs:
     - name: Get DateTime
       run: echo "DATE_TAG=$(date +%Y-%m-%d-%H%M%S)" >> GITHUB_ENV
     
-    -name: Read Tag
+    - name: Read Tag
       run: echo ${{ env.DATE_TAG }}
 
     - name: Set up Docker Buildx
