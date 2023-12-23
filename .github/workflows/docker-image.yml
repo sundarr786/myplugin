@@ -11,6 +11,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    env:
+      timestamp_t: hello
     
     - name: Get DateTime
       run: echo "DATE_TAG=$(date +%Y-%m-%d-%H%M%S)" >> GITHUB_ENV
