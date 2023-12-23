@@ -29,4 +29,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: sundarr786/myplugin:0.3
+        tags: sundarr786/myplugin:${{ env.DATE_TAG }}
